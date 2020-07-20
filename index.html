@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+
+<body style="background-color: black;">
+    <br>
+    <div class="main">
+        <div class="d1">
+            <h1>
+                TO-DO LIST APPLICATION
+            </h1>
+            <br>
+        </div>
+        <div class="d1">
+            <input type="text" id="todo-item" placeholder="Enter Your Tasks"
+                class="btn btn-outline-light btn-lg btn-block">
+            <br>
+            <br>
+            <button id="myBtn" onclick="addtodo()" type="button" class="btn btn-outline-primary">Add Item</button>
+            <button onclick="deleteAll()" type="button" class="btn btn-outline-warning">Delete All</button>
+        </div>
+
+        <div>
+            <ul id="list">
+
+            </ul>
+        </div>
+    </div>
+    <script src=app.js></script>
+</body>
+
+</html>
